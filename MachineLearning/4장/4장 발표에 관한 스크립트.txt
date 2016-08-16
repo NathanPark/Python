@@ -1,0 +1,62 @@
+﻿import bayes
+
+'''
+4_1. 텍스트로 단어 벡터 만들기
+myVocabList는 단어의 유니크함을 나타내기 위해 사용한다.
+'''
+listOPosts, listClasses = bayes.loadDataSet()
+myVocabList = bayes.createVocabList(listOPosts)
+myVocabList
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+'''
+4_1. 텍스트로 단어 벡터 만들기
+setOfWords2Vec는 각 단어의 속성을 확인하고 생성하고자 할 때 어휘 목록 또는 단어의 목록을 구해 0과 1로 구분한다.
+'''
+bayes.setOfWords2Vec(myVocabList, listOPosts[0])
+
+bayes.setOfWords2Vec(myVocabList, listOPosts[3])
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+'''
+4_2. 훈련: 단어 벡터로 확률 계산하기
+'''
+
+from numpy import *
+reload(bayes)
+listOPosts, listClasses = bayes.loadDataSet()
+#이전의 값들을 데이터로 불러옴
+
+myVocabList = bayes.createVocabList(listOPosts)
+#myVocabList에 있는 단어들을 갖고 하나의 리스트를 생성
+
+trainMat[]
+for postinDoc in listOPosts:
+    trainMat.append(bayes.setOfWords2Vec(myVocabList,postinDoc))
+
+p0V,p1V,pAb = bayes.trainNB0(trainMat,listClasses)
+
+pAb
+
+p0V
+
+p1V
+
+
+---------------------
+
+
+4_3. 검사: 실제 조건을 반영하기 위해 분류기 수정하기
+
+reload(bayes)
+bayes.testingNB()
+
+
+
+
+
+
+
+

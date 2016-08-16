@@ -1,0 +1,37 @@
+Q1.
+x=10
+y=1
+while x!=y:
+    print(y)
+    y=y+1
+
+Q3.
+a=bin(a)
+b=oct(b)
+c=hex(c)
+
+data=[a,b,c]
+data
+
+Q4.
+with open('data/text_data.txt') as data:
+    for text in data:
+        print(text.splitlines())
+
+Q5.
+import random
+data = random.sample(range(100),10)
+
+for get_data in data:
+    get_data = get_data +1
+    if(get_data > 70):
+        print("%d점이므로 합격입니다." %get_data)
+    else:
+        print("%d점이므로 불합격입니다." %get_data)
+
+for get_data in data:
+    get_data = get_data +1
+    if(get_data > 70):
+        print("%d점이므로 합격입니다." %get_data)
+    else:
+        print("%d점이므로 불합격입니다." %get_data)

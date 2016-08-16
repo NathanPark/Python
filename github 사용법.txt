@@ -1,0 +1,13 @@
+git hub 사용법
+
+레포지토리
+C:\Users\user\Coding\R
+
+git clone ssh주소 -> 깃헙에있는
+
+git add 'file.txt'
+git commit -m "file name.txt" -> 깃 커밋을 무엇으로 할것인지에 대한 설명
+git remote add origin https://github.com/UnlimitedGray/[파일명].git
+또는 걍 R에 저장
+
+git push origin master -> github에 등록
