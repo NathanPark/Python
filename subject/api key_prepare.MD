@@ -1,3 +1,6 @@
+conda install --name Chap3 python=3.5
+activate Chap3
+
 pip install -r requirements.txt
 
 api key_1 = 
