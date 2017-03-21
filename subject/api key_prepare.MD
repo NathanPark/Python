@@ -1,4 +1,6 @@
-﻿api key_1 = 
+pip install -r requirements.txt
+
+api key_1 = 
 "AvTUreb2auwqPpS2wlLLxAAxELJUjxOA5KwvmOEyaoXPNQUngJHtB9AYT3Z24NhrLJVFfxl6x1j2%2F%2FOR7t%2FM4A%3D%3D"
 
 api key_2=
