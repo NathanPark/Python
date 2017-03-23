@@ -14,4 +14,5 @@ conda create [name] python=3.5
 activate [name]
 
 conda install ipython ipython notebook pandas numpy
-이후 코드를 실행하시면 
+
+이후 코드를 실행하시면 됩니다
