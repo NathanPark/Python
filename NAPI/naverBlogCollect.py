@@ -24,7 +24,7 @@ class CollectBlog:
         html_date=[]
         
         for i in range(0,self.pageNum):
-            time.sleep(10)
+            time.sleep(2)
             url="http://section.blog.naver.com/sub/SearchBlog.nhn?type=post&option.keyword=%s"%(self.index) +\
                 "&term=&option.startDate=&option.endDate=&option.page.currentPage=%d&option.orderBy=sim"%(self.pageNum)
 
@@ -62,7 +62,12 @@ indexing=input("검색문구 입력: ")
 
 '''
 블로그 중 포스트 페이지 번호를 입력 
-번호는 0번부터 시작이므로 최종번호까지만 입력하면 됨
+번호는 0번부터 시작이므로 최종번호(대략300)까지만 입력하면 됨
+그렇지 않을 경우 에러 발생
+
+단, 블로그 검색 번호는 다음의 수식을 계산하여야함
+검색(N)*sleep(2)
+예시, 100건의 검색*sleep(2)이면 = 200초의 시간 경과가 걸림
 '''
 pageNum=input("블로그 검색 번호 입력: ")
 
